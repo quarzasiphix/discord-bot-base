@@ -1,7 +1,19 @@
-#include <common.hpp>
+#include <bot.h>
 
-int main() {
+class sandbox : public app {
+public:
+	sandbox() {
+		printf("intialised log!!\n");
+		printf("hellooo\n");
 
-	std::cout << "hello world" << std::endl;
-	std::cin.get();
+		//PushLayer(new ExampleLayer());
+	}
+
+	~sandbox() {
+
+	}
+};
+
+app* createApp() {
+	return new sandbox();
 }

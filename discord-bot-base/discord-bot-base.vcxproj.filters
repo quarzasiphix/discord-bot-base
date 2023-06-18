@@ -15,9 +15,4 @@
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="includes\common.hpp">
-      <Filter>includes</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>
