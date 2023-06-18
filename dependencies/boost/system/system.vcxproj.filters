@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="includes">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\error_code.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\common.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\append_int.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\cerrno.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\config.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\enable_if.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\errc.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\error_category.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\error_category_impl.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\error_code.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\error_condition.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\generic_category.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\generic_category_message.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\interop_category.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\is_same.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\mutex.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\requires_cxx11.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\snprintf.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\std_category.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\std_category_impl.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\system_category.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\system_category_condition_win32.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\system_category_impl.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\system_category_message.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\system_category_message_win32.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\detail\throws.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\api_config.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\config.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\cygwin_error.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\errc.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\error_category.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\error_code.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\error_condition.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\generic_category.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\is_error_code_enum.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\is_error_condition_enum.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\linux_error.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\result.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\system_category.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\system_error.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system\windows_error.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\cerrno.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\boost\system.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c81148ee-0b2a-481a-b449-a5dbc4859364}</ProjectGuid>
+    <RootNamespace>date_time</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\~$(Platform)\boost\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)\~$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>BOOST_NO_STD_WSTRING;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)includes/;$(ProjectDir)src/;$(SolutionDir)dependencies\boost\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gregorian\custom_greg_weekday.cpp" />
+    <ClCompile Include="src\gregorian\date_generators.cpp" />
+    <ClCompile Include="src\gregorian\gregorian_types.cpp" />
+    <ClCompile Include="src\gregorian\greg_month.cpp" />
+    <ClCompile Include="src\posix_time\posix_time_types.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\boost\date_time.hpp" />
+    <ClInclude Include="includes\boost\date_time\adjust_functors.hpp" />
+    <ClInclude Include="includes\boost\date_time\compiler_config.hpp" />
+    <ClInclude Include="includes\boost\date_time\constrained_value.hpp" />
+    <ClInclude Include="includes\boost\date_time\c_local_time_adjustor.hpp" />
+    <ClInclude Include="includes\boost\date_time\c_time.hpp" />
+    <ClInclude Include="includes\boost\date_time\date.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_clock_device.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_defs.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_duration.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_duration_types.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_facet.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_formatting.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_formatting_limited.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_formatting_locales.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_format_simple.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_generators.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_generator_formatter.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_generator_parser.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_iterator.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_names_put.hpp" />
+    <ClInclude Include="includes\boost\date_time\date_parsing.hpp" />
+    <ClInclude Include="includes\boost\date_time\dst_rules.hpp" />
+    <ClInclude Include="includes\boost\date_time\dst_transition_generators.hpp" />
+    <ClInclude Include="includes\boost\date_time\filetime_functions.hpp" />
+    <ClInclude Include="includes\boost\date_time\find_match.hpp" />
+    <ClInclude Include="includes\boost\date_time\format_date_parser.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\conversion.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\custom_greg_weekday.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\formatters.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\formatters_limited.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\gregorian.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\gregorian_io.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\gregorian_types.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_calendar.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_date.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_day.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_day_of_year.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_duration.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_duration_types.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_facet.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_month.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_serialize.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_weekday.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_year.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\greg_ymd.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian\parsers.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian_calendar.hpp" />
+    <ClInclude Include="includes\boost\date_time\gregorian_calendar.ipp" />
+    <ClInclude Include="includes\boost\date_time\int_adapter.hpp" />
+    <ClInclude Include="includes\boost\date_time\iso_format.hpp" />
+    <ClInclude Include="includes\boost\date_time\locale_config.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_timezone_defs.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\conversion.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\custom_time_zone.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\date_duration_operators.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\dst_transition_day_rules.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\local_date_time.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\local_time.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\local_time_io.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\local_time_types.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\posix_time_zone.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time\tz_database.hpp" />
+    <ClInclude Include="includes\boost\date_time\local_time_adjustor.hpp" />
+    <ClInclude Include="includes\boost\date_time\microsec_time_clock.hpp" />
+    <ClInclude Include="includes\boost\date_time\parse_format_base.hpp" />
+    <ClInclude Include="includes\boost\date_time\period.hpp" />
+    <ClInclude Include="includes\boost\date_time\period_formatter.hpp" />
+    <ClInclude Include="includes\boost\date_time\period_parser.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\conversion.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\date_duration_operators.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\posix_time.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\posix_time_config.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\posix_time_duration.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\posix_time_io.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\posix_time_legacy_io.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\posix_time_system.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\posix_time_types.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\ptime.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\time_formatters.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\time_formatters_limited.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\time_parsers.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\time_period.hpp" />
+    <ClInclude Include="includes\boost\date_time\posix_time\time_serialize.hpp" />
+    <ClInclude Include="includes\boost\date_time\special_defs.hpp" />
+    <ClInclude Include="includes\boost\date_time\special_values_formatter.hpp" />
+    <ClInclude Include="includes\boost\date_time\special_values_parser.hpp" />
+    <ClInclude Include="includes\boost\date_time\strings_from_facet.hpp" />
+    <ClInclude Include="includes\boost\date_time\string_convert.hpp" />
+    <ClInclude Include="includes\boost\date_time\string_parse_tree.hpp" />
+    <ClInclude Include="includes\boost\date_time\time.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_clock.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_defs.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_duration.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_facet.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_formatting_streams.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_iterator.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_parsing.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_resolution_traits.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_system_counted.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_system_split.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_zone_base.hpp" />
+    <ClInclude Include="includes\boost\date_time\time_zone_names.hpp" />
+    <ClInclude Include="includes\boost\date_time\tz_db_base.hpp" />
+    <ClInclude Include="includes\boost\date_time\wrapping_int.hpp" />
+    <ClInclude Include="includes\boost\date_time\year_month_day.hpp" />
+    <ClInclude Include="includes\common.hpp" />
+    <ClInclude Include="src\gregorian\greg_names.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "discord-bot-base", "discord-bot-base\discord-bot-base.vcxproj", "{10602D6A-023D-4D09-85E3-7065B2116568}"
+	ProjectSection(ProjectDependencies) = postProject
+		{261B445E-2B3F-49D2-8CBC-E9B4087FE145} = {261B445E-2B3F-49D2-8CBC-E9B4087FE145}
+		{C81148EE-0B2A-481A-B449-A5DBC4859364} = {C81148EE-0B2A-481A-B449-A5DBC4859364}
+		{E11DFB63-D737-4E98-B782-79EBBE37DF56} = {E11DFB63-D737-4E98-B782-79EBBE37DF56}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{D27EE0D3-3EC3-4A34-937A-52159BF94CA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{D71C856F-7F02-4A42-B59B-601BE61466A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "boost", "boost", "{568FF902-68D4-4F95-841C-6DDA0BBD6024}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "date_time", "dependencies\boost\date_time\date_time.vcxproj", "{C81148EE-0B2A-481A-B449-A5DBC4859364}"
+	ProjectSection(ProjectDependencies) = postProject
+		{261B445E-2B3F-49D2-8CBC-E9B4087FE145} = {261B445E-2B3F-49D2-8CBC-E9B4087FE145}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "random", "dependencies\boost\random\random.vcxproj", "{E11DFB63-D737-4E98-B782-79EBBE37DF56}"
+	ProjectSection(ProjectDependencies) = postProject
+		{261B445E-2B3F-49D2-8CBC-E9B4087FE145} = {261B445E-2B3F-49D2-8CBC-E9B4087FE145}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "system", "dependencies\boost\system\system.vcxproj", "{261B445E-2B3F-49D2-8CBC-E9B4087FE145}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10602D6A-023D-4D09-85E3-7065B2116568}.Release|x64.ActiveCfg = Release|x64
+		{10602D6A-023D-4D09-85E3-7065B2116568}.Release|x64.Build.0 = Release|x64
+		{C81148EE-0B2A-481A-B449-A5DBC4859364}.Release|x64.ActiveCfg = Release|x64
+		{C81148EE-0B2A-481A-B449-A5DBC4859364}.Release|x64.Build.0 = Release|x64
+		{E11DFB63-D737-4E98-B782-79EBBE37DF56}.Release|x64.ActiveCfg = Release|x64
+		{E11DFB63-D737-4E98-B782-79EBBE37DF56}.Release|x64.Build.0 = Release|x64
+		{261B445E-2B3F-49D2-8CBC-E9B4087FE145}.Release|x64.ActiveCfg = Release|x64
+		{261B445E-2B3F-49D2-8CBC-E9B4087FE145}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10602D6A-023D-4D09-85E3-7065B2116568} = {D71C856F-7F02-4A42-B59B-601BE61466A0}
+		{568FF902-68D4-4F95-841C-6DDA0BBD6024} = {D27EE0D3-3EC3-4A34-937A-52159BF94CA0}
+		{C81148EE-0B2A-481A-B449-A5DBC4859364} = {568FF902-68D4-4F95-841C-6DDA0BBD6024}
+		{E11DFB63-D737-4E98-B782-79EBBE37DF56} = {568FF902-68D4-4F95-841C-6DDA0BBD6024}
+		{261B445E-2B3F-49D2-8CBC-E9B4087FE145} = {568FF902-68D4-4F95-841C-6DDA0BBD6024}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B34180F-8EAB-4940-A6B1-26198DAC416A}
+	EndGlobalSection
+EndGlobal

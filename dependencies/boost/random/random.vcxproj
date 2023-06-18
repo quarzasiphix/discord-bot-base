@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e11dfb63-d737-4e98-b782-79ebbe37df56}</ProjectGuid>
+    <RootNamespace>random</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\~$(Platform)\boost\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)\~$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)includes/;$(ProjectDir)src/;$(SolutionDir)dependencies\boost\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\random_device.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\boost\nondet_random.hpp" />
+    <ClInclude Include="includes\boost\random.hpp" />
+    <ClInclude Include="includes\boost\random\additive_combine.hpp" />
+    <ClInclude Include="includes\boost\random\bernoulli_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\beta_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\binomial_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\cauchy_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\chi_squared_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\detail\auto_link.hpp" />
+    <ClInclude Include="includes\boost\random\detail\config.hpp" />
+    <ClInclude Include="includes\boost\random\detail\const_mod.hpp" />
+    <ClInclude Include="includes\boost\random\detail\disable_warnings.hpp" />
+    <ClInclude Include="includes\boost\random\detail\enable_warnings.hpp" />
+    <ClInclude Include="includes\boost\random\detail\generator_bits.hpp" />
+    <ClInclude Include="includes\boost\random\detail\generator_seed_seq.hpp" />
+    <ClInclude Include="includes\boost\random\detail\gray_coded_qrng.hpp" />
+    <ClInclude Include="includes\boost\random\detail\integer_log2.hpp" />
+    <ClInclude Include="includes\boost\random\detail\int_float_pair.hpp" />
+    <ClInclude Include="includes\boost\random\detail\iterator_mixin.hpp" />
+    <ClInclude Include="includes\boost\random\detail\large_arithmetic.hpp" />
+    <ClInclude Include="includes\boost\random\detail\mixmax_skip_N17.ipp" />
+    <ClInclude Include="includes\boost\random\detail\niederreiter_base2_table.hpp" />
+    <ClInclude Include="includes\boost\random\detail\operators.hpp" />
+    <ClInclude Include="includes\boost\random\detail\polynomial.hpp" />
+    <ClInclude Include="includes\boost\random\detail\ptr_helper.hpp" />
+    <ClInclude Include="includes\boost\random\detail\qrng_base.hpp" />
+    <ClInclude Include="includes\boost\random\detail\seed.hpp" />
+    <ClInclude Include="includes\boost\random\detail\seed_impl.hpp" />
+    <ClInclude Include="includes\boost\random\detail\signed_unsigned_tools.hpp" />
+    <ClInclude Include="includes\boost\random\detail\sobol_table.hpp" />
+    <ClInclude Include="includes\boost\random\detail\uniform_int_float.hpp" />
+    <ClInclude Include="includes\boost\random\detail\vector_io.hpp" />
+    <ClInclude Include="includes\boost\random\discard_block.hpp" />
+    <ClInclude Include="includes\boost\random\discrete_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\exponential_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\extreme_value_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\faure.hpp" />
+    <ClInclude Include="includes\boost\random\fisher_f_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\gamma_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\generate_canonical.hpp" />
+    <ClInclude Include="includes\boost\random\geometric_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\hyperexponential_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\independent_bits.hpp" />
+    <ClInclude Include="includes\boost\random\inversive_congruential.hpp" />
+    <ClInclude Include="includes\boost\random\lagged_fibonacci.hpp" />
+    <ClInclude Include="includes\boost\random\laplace_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\linear_congruential.hpp" />
+    <ClInclude Include="includes\boost\random\linear_feedback_shift.hpp" />
+    <ClInclude Include="includes\boost\random\lognormal_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\mersenne_twister.hpp" />
+    <ClInclude Include="includes\boost\random\mixmax.hpp" />
+    <ClInclude Include="includes\boost\random\negative_binomial_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\niederreiter_base2.hpp" />
+    <ClInclude Include="includes\boost\random\non_central_chi_squared_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\normal_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\piecewise_constant_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\piecewise_linear_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\poisson_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\random_device.hpp" />
+    <ClInclude Include="includes\boost\random\random_number_generator.hpp" />
+    <ClInclude Include="includes\boost\random\ranlux.hpp" />
+    <ClInclude Include="includes\boost\random\seed_seq.hpp" />
+    <ClInclude Include="includes\boost\random\shuffle_order.hpp" />
+    <ClInclude Include="includes\boost\random\shuffle_output.hpp" />
+    <ClInclude Include="includes\boost\random\sobol.hpp" />
+    <ClInclude Include="includes\boost\random\student_t_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\subtract_with_carry.hpp" />
+    <ClInclude Include="includes\boost\random\taus88.hpp" />
+    <ClInclude Include="includes\boost\random\traits.hpp" />
+    <ClInclude Include="includes\boost\random\triangle_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\uniform_01.hpp" />
+    <ClInclude Include="includes\boost\random\uniform_int.hpp" />
+    <ClInclude Include="includes\boost\random\uniform_int_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\uniform_on_sphere.hpp" />
+    <ClInclude Include="includes\boost\random\uniform_real.hpp" />
+    <ClInclude Include="includes\boost\random\uniform_real_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\uniform_smallint.hpp" />
+    <ClInclude Include="includes\boost\random\variate_generator.hpp" />
+    <ClInclude Include="includes\boost\random\weibull_distribution.hpp" />
+    <ClInclude Include="includes\boost\random\xor_combine.hpp" />
+    <ClInclude Include="includes\common.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
