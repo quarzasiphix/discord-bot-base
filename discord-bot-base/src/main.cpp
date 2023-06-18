@@ -3,10 +3,7 @@
 class sandbox : public app {
 public:
 	sandbox() {
-		printf("intialised log!!\n");
-		printf("hellooo\n");
 
-		//PushLayer(new ExampleLayer());
 	}
 
 	~sandbox() {

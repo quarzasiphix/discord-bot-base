@@ -2,7 +2,7 @@
 #include <core.h>
 
 #include <iostream>
-#include <curl.hpp>
 
+#include <discord/discord.hpp>
 #include <app/app.hpp>
 

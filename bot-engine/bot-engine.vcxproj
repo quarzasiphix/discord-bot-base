@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Release|x64">
@@ -40,10 +40,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>/NODEFAULTLIB;BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)includes/;$(ProjectDir)src/;$(SolutionDir)dependencies\curl\includes;$(SolutionDir)dependencies\curl\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\boost\include;$(ProjectDir)includes/;$(ProjectDir)src/;$(SolutionDir)dependencies\curl\includes;$(SolutionDir)dependencies\curl\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -59,9 +59,15 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\discord\client\client.cpp" />
+    <ClCompile Include="src\discord\socket\socket.cpp" />
+    <ClCompile Include="src\discord\discord.cpp" />
     <ClCompile Include="src\app\app.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\discord\client\client.hpp" />
+    <ClInclude Include="src\discord\socket\socket.hpp" />
+    <ClInclude Include="src\discord\discord.hpp" />
     <ClInclude Include="includes\bot.h" />
     <ClInclude Include="src\app\app.hpp" />
     <ClInclude Include="includes\common.hpp" />
