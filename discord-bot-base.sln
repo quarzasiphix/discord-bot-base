@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "discord-bot-base", "discord-bot-base\discord-bot-base.vcxproj", "{10602D6A-023D-4D09-85E3-7065B2116568}"
 	ProjectSection(ProjectDependencies) = postProject
 		{261B445E-2B3F-49D2-8CBC-E9B4087FE145} = {261B445E-2B3F-49D2-8CBC-E9B4087FE145}
+		{43C5A0D9-60D8-4F6D-AA6B-D1EFF0A56C6D} = {43C5A0D9-60D8-4F6D-AA6B-D1EFF0A56C6D}
 		{C81148EE-0B2A-481A-B449-A5DBC4859364} = {C81148EE-0B2A-481A-B449-A5DBC4859364}
 		{E11DFB63-D737-4E98-B782-79EBBE37DF56} = {E11DFB63-D737-4E98-B782-79EBBE37DF56}
 	EndProjectSection
@@ -28,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "random", "dependencies\boos
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "system", "dependencies\boost\system\system.vcxproj", "{261B445E-2B3F-49D2-8CBC-E9B4087FE145}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curl", "dependencies\curl\curl.vcxproj", "{43C5A0D9-60D8-4F6D-AA6B-D1EFF0A56C6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x64 = Release|x64
@@ -41,6 +44,8 @@ Global
 		{E11DFB63-D737-4E98-B782-79EBBE37DF56}.Release|x64.Build.0 = Release|x64
 		{261B445E-2B3F-49D2-8CBC-E9B4087FE145}.Release|x64.ActiveCfg = Release|x64
 		{261B445E-2B3F-49D2-8CBC-E9B4087FE145}.Release|x64.Build.0 = Release|x64
+		{43C5A0D9-60D8-4F6D-AA6B-D1EFF0A56C6D}.Release|x64.ActiveCfg = Release|x64
+		{43C5A0D9-60D8-4F6D-AA6B-D1EFF0A56C6D}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +56,7 @@ Global
 		{C81148EE-0B2A-481A-B449-A5DBC4859364} = {568FF902-68D4-4F95-841C-6DDA0BBD6024}
 		{E11DFB63-D737-4E98-B782-79EBBE37DF56} = {568FF902-68D4-4F95-841C-6DDA0BBD6024}
 		{261B445E-2B3F-49D2-8CBC-E9B4087FE145} = {568FF902-68D4-4F95-841C-6DDA0BBD6024}
+		{43C5A0D9-60D8-4F6D-AA6B-D1EFF0A56C6D} = {D27EE0D3-3EC3-4A34-937A-52159BF94CA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B34180F-8EAB-4940-A6B1-26198DAC416A}
