@@ -7,7 +7,7 @@ public:
 		printf("running\n");
 		while (true) {
 			curl c;
-			c.req("https://google.com");
+			c.req("http://google.com");
 		}
 	}
 };

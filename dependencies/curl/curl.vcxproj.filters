@@ -682,5 +682,8 @@
     <ClInclude Include="src\curl.hpp">
       <Filter>includes</Filter>
     </ClInclude>
+    <ClInclude Include="includes\httplib.h">
+      <Filter>includes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -52,7 +52,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>libcurl.a;ws2_32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>libcrypto.lib;libssl.lib;libcurl_a.lib;ws2_32.lib;</AdditionalDependencies>
     </Lib>
     <Lib>
       <AdditionalLibraryDirectories>$(SolutionDir)dependencies\curl\lib;</AdditionalLibraryDirectories>
@@ -74,6 +74,7 @@
     <ClInclude Include="includes\curl\typecheck-gcc.h" />
     <ClInclude Include="includes\curl\urlapi.h" />
     <ClInclude Include="includes\curl\websockets.h" />
+    <ClInclude Include="includes\httplib.h" />
     <ClInclude Include="src\curl.hpp" />
     <ClInclude Include="src\lib\altsvc.h" />
     <ClInclude Include="src\lib\amigaos.h" />
