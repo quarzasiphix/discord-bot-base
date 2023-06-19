@@ -49,5 +49,8 @@
     <ClInclude Include="src\discord\client\client.hpp">
       <Filter>includes</Filter>
     </ClInclude>
+    <ClInclude Include="includes\enpch.h">
+      <Filter>includes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

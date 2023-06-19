@@ -43,7 +43,7 @@
       <PreprocessorDefinitions>BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\boost\include;$(ProjectDir)includes/;$(ProjectDir)src/;$(SolutionDir)dependencies\curl\includes;$(SolutionDir)dependencies\curl\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\boost\include;$(ProjectDir)includes/;$(ProjectDir)src/;$(SolutionDir)dependencies\curl\includes;$(SolutionDir)dependencies\curl\src;$(SolutionDir)dependencies\boost\date_time\includes;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -65,6 +65,7 @@
     <ClCompile Include="src\app\app.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="includes\enpch.h" />
     <ClInclude Include="src\discord\client\client.hpp" />
     <ClInclude Include="src\discord\socket\socket.hpp" />
     <ClInclude Include="src\discord\discord.hpp" />

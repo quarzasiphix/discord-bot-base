@@ -1,12 +1,11 @@
 #pragma once
 #define CURL_STATICLIB
-#include <core.h>
-#include <iostream>
-//#include <curl/curl.h>
 #define CPPHTTPLIB_OPENSSL_SUPPORT
-#include <httplib.h>
-#define _WINSOCK2API_
-#define _WINSOCKAPI_
+//#include <httplib.h>
+//#define _WINSOCK2API_
+//#define _WINSOCKAPI_
+#include <core.h>
+//#include <curl/curl.h>
 
 class ENGINE_API curl {
 public:

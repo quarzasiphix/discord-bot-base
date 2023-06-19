@@ -43,7 +43,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)includes/;$(ProjectDir)src/;$(SolutionDir)dependencies\curl\includes;$(SolutionDir)bot-engine\includes;$(SolutionDir)bot-engine\src;$(SolutionDir)dependencies\curl\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\boost\date_time\includes;$(SolutionDir)dependencies\boost\include/;$(ProjectDir)includes/;$(ProjectDir)src/;$(SolutionDir)dependencies\curl\includes;$(SolutionDir)bot-engine\includes;$(SolutionDir)bot-engine\src;$(SolutionDir)dependencies\curl\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -51,7 +51,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)dependencies\curl\lib;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libcurl.a;ws2_32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcrypto.lib;libssl.lib;libcurl_a.lib;ws2_32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

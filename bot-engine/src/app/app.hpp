@@ -7,7 +7,7 @@ class ENGINE_API app {
 public:
 	bool run() {
 		printf("running\n");
-		discord::discord disc("MTA1OTg5ODQ2NzY4MzY4MDI2Ng.Go7QPM.PjbDsVJIpwvGMndETPWyEowOwIrD-Nmo239Ods");
+		discord::discord disc();
 		//if(dis)
 		while (true) {
 		}

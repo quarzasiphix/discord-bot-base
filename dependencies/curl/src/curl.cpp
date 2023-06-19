@@ -8,6 +8,7 @@ size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* res
 }
 
 bool curl::req(const char* url) {
+    /*
     httplib::Client client(url);
 
     // Send a GET request
@@ -21,6 +22,7 @@ bool curl::req(const char* url) {
     else {
         std::cout << "Request failed" << std::endl;
     }
+    */
 
     return true;
 }

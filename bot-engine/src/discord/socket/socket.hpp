@@ -21,7 +21,7 @@ using websocketpp::lib::bind;
 
 namespace discord {
 #define clientpp websocketpp::client<websocketpp::config::asio_tls_client>
-    httplib::Headers headers;
+    //httplib::Headers headers;
     class ENGINE_API discord;
 	class ENGINE_API socket {
 		discord* disc;
@@ -34,8 +34,8 @@ namespace discord {
 		socket(discord* disc) : disc(disc) {
             printf("Starting thread\n");
             threadClient = std::thread([=]() {
-                headers.emplace("Authorization", disc->get_token());
-                headers.emplace("User-Agent", "Discord");
+                //headers.emplace("Authorization", disc->get_token());
+                //headers.emplace("User-Agent", "Discord");
 
                 c.set_tls_init_handler([this](websocketpp::connection_hdl) {
                     return websocketpp::lib::make_shared<boost::asio::ssl::context>(boost::asio::ssl::context::tlsv1);
